@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        app:cardCornerRadius="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/banner_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/banner_image"
+                android:scaleType="centerCrop"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_location" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chittagong"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/fav_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_fav" />
+                <TextView
+                    android:id="@+id/save_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:paddingStart="4dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="2dp"
+                    android:text="Save 100 BDT"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_below="@id/banner_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Astonishing Ferrari Car"
+                android:textStyle="normal"
+                android:textColor="@color/teal_200"
+                android:textSize="18dp"
+                android:layout_margin="16dp" />
+            <LinearLayout
+                android:id="@+id/rating_img_txt"
+                android:layout_below="@id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/title_text"
+                    android:src="@drawable/ic_rating"
+                    android:layout_marginStart="16dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.3"
+                    android:textColor="#0746ED"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(40 reviews)   |   437 reviews"
+                    android:layout_marginStart="3dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/inactive_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT 1200.00"
+                android:layout_below="@id/rating_img_txt"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/active_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT 1200.00"
+                android:layout_below="@id/inactive_value"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
